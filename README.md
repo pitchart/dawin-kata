@@ -43,8 +43,8 @@ Même exercice avec les règles suivantes :
 Le but est d'écrire un algorithme qui prend un texte et une longueur de colonne et qui renvoie une liste de mots (coupés ou non) pouvant se positionner dans une colonne
 
 Exemples de comportement :
-Si la largeur de colonne est 60 et que la taille du texte est de 30, le résultat est [texte]
-Si la largeur de colonne est 3 et que le texte est "abc def" le résultat est ["abc", "def"]
-Si la largeur de colonne est 3 et que le texte est "abcdef" le résultat est ["abc", "def"]
-Si la largeur de colonne est 3 et que le texte est "abcdef abc" le résultat est ["abc", "def", "abc"]
-Si la largeur de colonne est 3 et que le texte est "a b c d e f" le résultat est ["a b", "c d", "e f"]
+* Si la largeur de colonne est 60 et que la taille du texte est de 30, le résultat est [texte]
+* Si la largeur de colonne est 3 et que le texte est "abc def" le résultat est ["abc", "def"]
+* Si la largeur de colonne est 3 et que le texte est "abcdef" le résultat est ["abc", "def"]
+* Si la largeur de colonne est 3 et que le texte est "abcdef abc" le résultat est ["abc", "def", "abc"]
+* Si la largeur de colonne est 3 et que le texte est "a b c d e f" le résultat est ["a b", "c d", "e f"]
