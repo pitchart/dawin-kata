@@ -1,6 +1,6 @@
 {
-    "name": "jvitte/katas",
-    "description": "Starter pour katas de code atelier GIT v2",
+    "name": "pitchart/katas",
+    "description": "Starter pour katas de code",
     "type": "starter",
     "require-dev": {
         "phpunit/phpunit": "^5.3"
@@ -8,7 +8,7 @@
     "authors": [
         {
             "name": "Julien VITTE",
-            "email": "j.vitte@alienor.net"
+            "email": "vitte.julien@gmail.com"
         }
     ],
     "require": {}
