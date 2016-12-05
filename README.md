@@ -1,4 +1,4 @@
-# Starter pour katas de code atelier GIT v2
+# Starter pour katas de code
 
 Le but est, par la réalisation d'exercices simples de code, de s'habituer au développement avec tests unitaires et de mettre en place une bonne fréquence de commit en fonction de l'avancement du code.
 
