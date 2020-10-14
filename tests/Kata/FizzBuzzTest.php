@@ -35,6 +35,15 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals('Fizz', $this->fb->of($number));
     }
 
+    /**
+     * @param $number
+     * @dataProvider multiplesOfFiveNumberProvider
+     */
+    public function testReturnsFizzForMultiplesOfFiveFor($number)
+    {
+        $this->assertEquals('Buzz', $this->fb->of($number));
+    }
+
     public function classicalNumberProvider()
     {
         yield from [
@@ -48,6 +57,13 @@ class FizzBuzzTest extends TestCase
         yield from [
             'min limit 3' => [3],
             'max limit 99' => [99],
+        ];
+    }
+
+    public function multiplesOfFiveNumberProvider()
+    {
+        yield from [
+            'min limit 5' => [5],
         ];
     }
 }
