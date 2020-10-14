@@ -11,5 +11,15 @@
             "email": "vitte.julien@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kata\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Kata\\": "tests/Kata/"
+        }
+    }
 }
