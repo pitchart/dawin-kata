@@ -8,6 +8,6 @@ class FizzBuzz
 {
     public function of(int $number)
     {
-        return 1;
+        return $number;
     }
 }
