@@ -7,15 +7,30 @@ use PHPUnit\Framework\TestCase;
 
 class FizzBuzzTest extends TestCase
 {
-    public function testLeast()
+    /**
+     * @var FizzBuzz
+     */
+    private $fb;
+
+    protected function setUp()
     {
-        $fb = new FizzBuzz();
-        $this->assertEquals(1, $fb->of(1));
+        $this->fb = new FizzBuzz();
     }
 
-    public function testMost()
+    /**
+     * @param $number
+     * @dataProvider classicalNumberProvider
+     */
+    public function testReturnsSameNumberForClassicalNumbersFor($number)
     {
-        $fb = new FizzBuzz();
-        $this->assertEquals(98, $fb->of(98));
+        $this->assertEquals($number, $this->fb->of($number));
+    }
+
+    public function classicalNumberProvider()
+    {
+        yield from [
+            'min limit 1' => [1],
+            'max limit 98' => [98],
+        ];
     }
 }
