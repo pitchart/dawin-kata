@@ -64,6 +64,7 @@ class FizzBuzzTest extends TestCase
     {
         yield from [
             'min limit 5' => [5],
+            'max limit 100' => [100]
         ];
     }
 }
