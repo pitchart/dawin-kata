@@ -39,10 +39,15 @@ class FizzBuzzTest extends TestCase
      * @param $number
      * @dataProvider multiplesOfFiveNumberProvider
      */
-    public function testReturnsFizzForMultiplesOfFiveFor($number)
+    public function testReturnsBuzzForMultiplesOfFiveFor($number)
     {
         $this->assertEquals('Buzz', $this->fb->of($number));
     }
+
+	public function testReturnsFizzBuzzForMultiplesOfFiveAndThreeFor()
+	{
+		$this->assertEquals('FizzBuzz', $this->fb->of(15));
+	}
 
     public function classicalNumberProvider()
     {
