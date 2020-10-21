@@ -10,7 +10,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @var FizzBuzz
      */
-    private $fb;
+    protected $fb;
 
     protected function setUp()
     {
