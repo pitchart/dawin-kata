@@ -4,7 +4,7 @@
 namespace Kata;
 
 
-class FizzBuzz
+class FizzBuzz implements FizzBuzzInterface
 {
     const FIZZ = 'Fizz';
     const BUZZ = 'Buzz';
