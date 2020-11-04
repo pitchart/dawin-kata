@@ -5,20 +5,13 @@ namespace Kata;
 
 class FizzBuzz2 extends FizzBuzz
 {
-    public function of(int $number)
+    public function isFizz($number)
     {
-        $parent = parent::of($number);
+        return parent::isFizz($number) || strstr($number, '3') !== false;
+    }
 
-        if (strstr($parent, '3') !== false && strstr($parent, '5') !== false) {
-            return self::FIZZ . self::BUZZ;
-        }
-        if (strstr($parent, '3') !== false) {
-            return self::FIZZ;
-        }
-        if (strstr($parent, '5') !== false) {
-            return self::BUZZ;
-        }
-
-        return $parent;
+    public function isBuzz($number)
+    {
+        return parent::isBuzz($number) || strstr($number, '5') !== false;
     }
 }

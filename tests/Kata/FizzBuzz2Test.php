@@ -26,4 +26,14 @@ class FizzBuzz2Test extends FizzBuzzTest
     {
         $this->assertEquals('FizzBuzz', $this->fb->of(53));
     }
+
+    public function testReturnsFizzBuzzWhenNumberContainsFiveAndIsMultipleOfThree()
+    {
+        $this->assertEquals('FizzBuzz', $this->fb->of(51));
+    }
+
+    public function testReturnsFizzBuzzWhenNumberContainsThreeAndIsMultipleOfFive()
+    {
+        $this->assertEquals('FizzBuzz', $this->fb->of(35));
+    }
 }

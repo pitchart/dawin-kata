@@ -12,14 +12,24 @@ class FizzBuzz
     public function of(int $number)
     {
         $return = '';
-        if ($number % 3 == 0) {
+        if ($this->isFizz($number)) {
             $return .= self::FIZZ;
         }
 
-        if ($number % 5 == 0) {
+        if ($this->isBuzz($number)) {
             $return .= self::BUZZ;
         }
 
         return $return != '' ? $return : $number;
+    }
+
+    public function isFizz($number)
+    {
+        return $number % 3 == 0;
+    }
+
+    public function isBuzz($number)
+    {
+        return $number % 5 == 0;
     }
 }
